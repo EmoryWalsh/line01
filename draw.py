@@ -4,13 +4,13 @@ def draw_line( x0, y0, x1, y1, screen, color ):
 
     #SETUP
     if(x0 > x1):
-        storx = x1
+        storex = x1
         x1 = x0
-        x0 = storx
-        story = y1
+        x0 = storex
+        storey = y1
         y1 = y0
-        y0 = story
-        
+        y0 = storey
+
     #variables x,y
     x = x0
     y = y0
