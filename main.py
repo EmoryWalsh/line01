@@ -30,8 +30,8 @@ c[BLUE] = 255;
 #horizontal and vertical
 c[BLUE] = 0;
 c[GREEN] = 255;
-#draw_line(0, YRES/2, XRES-1, YRES/2, s, c);
-#draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
+draw_line(0, YRES/2, XRES-1, YRES/2, s, c);
+draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
 
 
 display(s)

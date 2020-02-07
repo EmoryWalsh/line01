@@ -2,25 +2,32 @@ from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
 
+    #SETUP
     if(x0 > x1):
-        print(str(x0) + "," + str(y0))
-        print(str(x1) + "," + str(y1))
         storx = x1
         x1 = x0
         x0 = storx
         story = y1
         y1 = y0
         y0 = story
-        print(str(x0) + "," + str(y0))
-        print(str(x1) + "," + str(y1))
-
-    #############################################################
-    #HORIZONTAL LINE
-    #if(y0 === y)
-
+        
     #variables x,y
     x = x0
     y = y0
+
+    #############################################################
+    #HORIZONTAL LINE
+    if(y0 == y1):
+        while(x < x1):
+            plot(screen, color, int(x), int(y))
+            x = x + 1
+
+    #VERTICAL LINE
+    if(x0 == x1):
+        while(y < y1):
+            plot(screen, color, int(x), int(y))
+            y = y + 1
+
 
     #variables A, B
     #FIX THIS -- WHAT ARE A AND B
