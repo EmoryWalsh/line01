@@ -2,15 +2,15 @@ from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
 
-    #variables x,y
-    x = x0
-    y = y0
-
     #so x0 is always smaller than x1
     if(x0 > x1):
         x0, x1 = x1, x0
         y0, y1 = y1, y0
 
+    #variables x,y
+    x = x0
+    y = y0
+    
     #HORIZONTAL LINE
     if(y0 == y1):
         while(x <= x1):
